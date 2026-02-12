@@ -44,7 +44,7 @@ jobs:
           context: ./QingLong
           push: true
           tags: |
-            ghcr.io/${{ steps.lower-repo.outputs.repository }}/7l:latest
+            ghcr.io/${{ github.repository_owner }}/python-js:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=7l Docker Image
