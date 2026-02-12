@@ -78,7 +78,8 @@ RUN set -x && \
   sshpass \
   rclone \
   unzip \
-  libatomic1 && \
+  libatomic1 \
+  zstd && \
   apt-get clean && \
   ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
   echo "Asia/Shanghai" >/etc/timezone && \
